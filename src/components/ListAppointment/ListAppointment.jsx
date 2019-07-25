@@ -3,8 +3,8 @@ import React from "react";
 const ListAppointment = ({ appointments }) => {
   return (
     <div className="appointment-list item-list mb-3">
-      {appointments.map(appointment => (
-        <div className="pet-item col media py-3" key={appointments.aptId}>
+      {appointments.map((appointment,i) => (
+        <div className="pet-item col media py-3" key={i}>
           <div className="mr-3">
             <button className="pet-delete btn btn-sm btn-danger">X</button>
           </div>
